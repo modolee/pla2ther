@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ab86dfd-5fba-43cd-9e2c-8cc95718ba49" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/contracts/erc721/DeprecatedERC721.sol" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/contracts/erc721/ERC721.sol" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/contracts/erc721/ERC721Basic.sol" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/contracts/erc721/ERC721BasicToken.sol" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/contracts/erc721/ERC721Holder.sol" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/contracts/erc721/ERC721Receiver.sol" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/contracts/erc721/ERC721Token.sol" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/contracts/owner/Ownable.sol" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/contracts/SongBase.sol" afterPath="$PROJECT_DIR$/contracts/song/SongBase.sol" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,21 +14,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="truffle.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/truffle.js">
+      <file leaf-file-name="SongBase.sol" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contracts/song/SongBase.sol">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="16" />
+            <state relative-caret-position="30">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SongBase.sol" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contracts/SongBase.sol">
+      <file leaf-file-name="SongController.sol" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/contracts/song/SongController.sol">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            <state relative-caret-position="60">
+              <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Migrations.sol" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contracts/Migrations.sol">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SongToken.sol" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contracts/song/SongToken.sol">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="3" lean-forward="false" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -64,18 +77,18 @@
       <file leaf-file-name="ERC721Token.sol" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contracts/erc721/ERC721Token.sol">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="42">
+              <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ownable.sol" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Ownable.sol" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contracts/owner/Ownable.sol">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+            <state relative-caret-position="135">
+              <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -84,8 +97,8 @@
       <file leaf-file-name="ERC721.sol" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contracts/erc721/ERC721.sol">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+            <state relative-caret-position="30">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -103,6 +116,13 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Solidity Contract" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -115,6 +135,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/contracts/SongBase.sol" />
+        <option value="$PROJECT_DIR$/contracts/SongController.sol" />
+        <option value="$PROJECT_DIR$/contracts/song/SongController.sol" />
+        <option value="$PROJECT_DIR$/contracts/song/SongToken.sol" />
+        <option value="$PROJECT_DIR$/contracts/song/SongBase.sol" />
       </list>
     </option>
   </component>
@@ -164,6 +189,24 @@
             <path>
               <item name="pla2ther" type="b2602c69:ProjectViewProjectNode" />
               <item name="pla2ther" type="462c0819:PsiDirectoryNode" />
+              <item name="contracts" type="462c0819:PsiDirectoryNode" />
+              <item name="erc721" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pla2ther" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pla2ther" type="462c0819:PsiDirectoryNode" />
+              <item name="contracts" type="462c0819:PsiDirectoryNode" />
+              <item name="owner" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pla2ther" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pla2ther" type="462c0819:PsiDirectoryNode" />
+              <item name="contracts" type="462c0819:PsiDirectoryNode" />
+              <item name="song" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pla2ther" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pla2ther" type="462c0819:PsiDirectoryNode" />
               <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -197,6 +240,7 @@
       <recent name="$PROJECT_DIR$/contracts/erc721" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/contracts/song" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -312,7 +356,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1453000" />
+    <option name="totallyTimeSpent" value="3941000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="29" y="23" width="1251" height="777" extended-state="0" />
@@ -412,22 +456,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/SongBase.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/erc721/ERC721.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/contracts/erc721/DeprecatedERC721.sol">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -444,7 +472,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/contracts/owner/Ownable.sol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/contracts/erc721/ERC721Token.sol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contracts/erc721/ERC721.sol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contracts/Migrations.sol">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -452,10 +504,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/owner/Ownable.sol">
+    <entry file="file://$PROJECT_DIR$/contracts/song/SongBase.sol">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contracts/song/SongToken.sol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="3" lean-forward="false" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contracts/song/SongController.sol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="35" />
           <folding />
         </state>
       </provider>

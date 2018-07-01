@@ -1,5 +1,6 @@
 pragma solidity ^0.4.24;
 
+
 contract SongBase {
 
     /// @dev 곡 정보 공통
@@ -16,22 +17,9 @@ contract SongBase {
         string time;
         // 발행 개수 (max : 100)
         uint8 capacity;
-        // 첫 토큰 인덱스
-        uint256 firstIdx;
-    }
-
-    /// @dev Tokenize된 곡
-    struct Song {
-        // 곡 정보(artist, title)의 Hash 값
-        bytes32 songInfoHash;
-        // 동일 한 곡 토큰 중 몇 번째인지
-        uint8 seq;
     }
 
     // 한 곡 당 1개 생성
     mapping (bytes32 => SongInfo) hashToSongInfo;
-
-    // 한 곡 당 발행 개수 만큼 생성
-    Song[] songs;
 
 }
