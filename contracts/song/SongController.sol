@@ -1,43 +1,54 @@
 pragma solidity ^0.4.24;
 
-import  "./SongBase.sol";
-import "./SongToken.sol";
+import "../ownership/Ownable.sol";
 
-contract SongController is SongBase {
-  constructor() {
+contract SongController is Ownable {
+  constructor() public {
   }
+
+  address[] internal songs;
 
   /// @notice 음원 토큰 등록
   function createToken(
     string _artist,
     string _title,
     string _fileURI,
-    string _capacity
+    string _time,
+    uint8 _capacity
   )
-    public
+  public
   {
-    SongInfo memory newSong = SongInfo({
-      artist:_artist,
-      title:_title,
-      fileURI:_fileURI,
-      creator:_msg.sender(),
-      time:now,
-      capacity:_capacity
-    });
+    address newSong
+    = address(new SongToken(
+        "Pla2therToken",
+        "P2T",
+        _artist,
+        _title,
+        _fileURI,
+        _time,
+        _capacity
+      ));
 
-    new SongToken(newSong);
+    songs.push(newSong);
   }
 
-  /// @notice 판매 등록
-  function sell(SongToken _address, uint8 _id) public onlyOwnerOf {
+  function getSong(uint256 _idx) public view returns (address) {
+    require(songs.length > 0);
+    require(_idx < songs.length);
+    return songs[_idx];
   }
 
-  /// @notice 판매 취소
-  function cancelSell(SongToken _address, uint8 _id) public onlyOwnerOf {
+  /*  /// @notice 판매 등록
+    function sell(SongToken _address, uint8 _id) public onlyOwnerOf(_id) {
 
-  }
+    }
 
-  /// @notice 구매
-  function buy(SongToken _address, uint8 _id) public payable {
-  }
+    /// @notice 판매 취소
+    function cancelSell(SongToken _address, uint8 _id) public onlyOwnerOf(_id) {
+
+    }
+
+    /// @notice 구매
+    function buy(SongToken _address, uint8 _id) public payable {
+    }*/
 }
