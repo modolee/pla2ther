@@ -1,0 +1,240 @@
+{
+  "contractName": "SongController",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3006080604052600080fd00a165627a7a72305820fab1dea22b9aa0dc58b23118fb2081778b212a8d8d30932d43972c36cee38c270029",
+  "deployedBytecode": "0x6080604052600080fd00a165627a7a72305820fab1dea22b9aa0dc58b23118fb2081778b212a8d8d30932d43972c36cee38c270029",
+  "sourceMap": "52:74:8:-;;;95:29;8:9:-1;5:2;;;30:1;27;20:12;5:2;95:29:8;52:74;;;;;;",
+  "deployedSourceMap": "52:74:8:-;;;;;",
+  "source": "pragma solidity ^0.4.24;\n\nimport \"./SongBase.sol\";\n\ncontract SongController is SongBase {\n\n    constructor() public {\n\n    }\n}\n",
+  "sourcePath": "/Users/parkdongjo/Documents/my_projects/ethereum_project/pla2ther/contracts/song/SongController.sol",
+  "ast": {
+    "absolutePath": "/Users/parkdongjo/Documents/my_projects/ethereum_project/pla2ther/contracts/song/SongController.sol",
+    "exportedSymbols": {
+      "SongController": [
+        459
+      ]
+    },
+    "id": 460,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 451,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:8"
+      },
+      {
+        "absolutePath": "/Users/parkdongjo/Documents/my_projects/ethereum_project/pla2ther/contracts/song/SongBase.sol",
+        "file": "./SongBase.sol",
+        "id": 452,
+        "nodeType": "ImportDirective",
+        "scope": 460,
+        "sourceUnit": 450,
+        "src": "26:24:8",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 453,
+              "name": "SongBase",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 449,
+              "src": "79:8:8",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SongBase_$449",
+                "typeString": "contract SongBase"
+              }
+            },
+            "id": 454,
+            "nodeType": "InheritanceSpecifier",
+            "src": "79:8:8"
+          }
+        ],
+        "contractDependencies": [
+          449
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 459,
+        "linearizedBaseContracts": [
+          459,
+          449
+        ],
+        "name": "SongController",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 457,
+              "nodeType": "Block",
+              "src": "116:8:8",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 458,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 455,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "106:2:8"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 456,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "116:0:8"
+            },
+            "scope": 459,
+            "src": "95:29:8",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 460,
+        "src": "52:74:8"
+      }
+    ],
+    "src": "0:127:8"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/parkdongjo/Documents/my_projects/ethereum_project/pla2ther/contracts/song/SongController.sol",
+    "exportedSymbols": {
+      "SongController": [
+        459
+      ]
+    },
+    "id": 460,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 451,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:8"
+      },
+      {
+        "absolutePath": "/Users/parkdongjo/Documents/my_projects/ethereum_project/pla2ther/contracts/song/SongBase.sol",
+        "file": "./SongBase.sol",
+        "id": 452,
+        "nodeType": "ImportDirective",
+        "scope": 460,
+        "sourceUnit": 450,
+        "src": "26:24:8",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 453,
+              "name": "SongBase",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 449,
+              "src": "79:8:8",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SongBase_$449",
+                "typeString": "contract SongBase"
+              }
+            },
+            "id": 454,
+            "nodeType": "InheritanceSpecifier",
+            "src": "79:8:8"
+          }
+        ],
+        "contractDependencies": [
+          449
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 459,
+        "linearizedBaseContracts": [
+          459,
+          449
+        ],
+        "name": "SongController",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 457,
+              "nodeType": "Block",
+              "src": "116:8:8",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 458,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 455,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "106:2:8"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 456,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "116:0:8"
+            },
+            "scope": 459,
+            "src": "95:29:8",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 460,
+        "src": "52:74:8"
+      }
+    ],
+    "src": "0:127:8"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.0",
+  "updatedAt": "2018-07-01T07:52:53.078Z"
+}

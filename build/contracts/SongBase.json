@@ -1,0 +1,527 @@
+{
+  "contractName": "SongBase",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3006080604052600080fd00a165627a7a72305820dd3930dc33a9c884e1ec3b688accaecd07990b06f90ac462745201a14aa3f93a0029",
+  "deployedBytecode": "0x6080604052600080fd00a165627a7a72305820dd3930dc33a9c884e1ec3b688accaecd07990b06f90ac462745201a14aa3f93a0029",
+  "sourceMap": "27:485:7:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:485:7;;;;;;;",
+  "deployedSourceMap": "27:485:7:-;;;;;",
+  "source": "pragma solidity ^0.4.24;\n\n\ncontract SongBase {\n\n    /// @dev 곡 정보 공통\n    struct SongInfo {\n        // 가수, 연주자\n        string artist;\n        // 곡 명\n        string title;\n        // 파일이 저장 된 IPFS 주소\n        string fileURI;\n        // 최초 등록자\n        address creator;\n        // 등록 시간\n        string time;\n        // 발행 개수 (max : 100)\n        uint8 capacity;\n    }\n\n    // 한 곡 당 1개 생성\n    mapping (bytes32 => SongInfo) hashToSongInfo;\n\n}\n",
+  "sourcePath": "/Users/parkdongjo/Documents/my_projects/ethereum_project/pla2ther/contracts/song/SongBase.sol",
+  "ast": {
+    "absolutePath": "/Users/parkdongjo/Documents/my_projects/ethereum_project/pla2ther/contracts/song/SongBase.sol",
+    "exportedSymbols": {
+      "SongBase": [
+        449
+      ]
+    },
+    "id": 450,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 431,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:7"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 449,
+        "linearizedBaseContracts": [
+          449
+        ],
+        "name": "SongBase",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "SongBase.SongInfo",
+            "id": 444,
+            "members": [
+              {
+                "constant": false,
+                "id": 433,
+                "name": "artist",
+                "nodeType": "VariableDeclaration",
+                "scope": 444,
+                "src": "138:13:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 432,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "138:6:7",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 435,
+                "name": "title",
+                "nodeType": "VariableDeclaration",
+                "scope": 444,
+                "src": "180:12:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 434,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "180:6:7",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 437,
+                "name": "fileURI",
+                "nodeType": "VariableDeclaration",
+                "scope": 444,
+                "src": "246:14:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 436,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "246:6:7",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 439,
+                "name": "creator",
+                "nodeType": "VariableDeclaration",
+                "scope": 444,
+                "src": "298:15:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 438,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "298:7:7",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 441,
+                "name": "time",
+                "nodeType": "VariableDeclaration",
+                "scope": 444,
+                "src": "348:11:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 440,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "348:6:7",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 443,
+                "name": "capacity",
+                "nodeType": "VariableDeclaration",
+                "scope": 444,
+                "src": "406:14:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint8",
+                  "typeString": "uint8"
+                },
+                "typeName": {
+                  "id": 442,
+                  "name": "uint8",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "406:5:7",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "SongInfo",
+            "nodeType": "StructDefinition",
+            "scope": 449,
+            "src": "83:344:7",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 448,
+            "name": "hashToSongInfo",
+            "nodeType": "VariableDeclaration",
+            "scope": 449,
+            "src": "464:44:7",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_SongInfo_$444_storage_$",
+              "typeString": "mapping(bytes32 => struct SongBase.SongInfo)"
+            },
+            "typeName": {
+              "id": 447,
+              "keyType": {
+                "id": 445,
+                "name": "bytes32",
+                "nodeType": "ElementaryTypeName",
+                "src": "473:7:7",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "464:29:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_SongInfo_$444_storage_$",
+                "typeString": "mapping(bytes32 => struct SongBase.SongInfo)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 446,
+                "name": "SongInfo",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 444,
+                "src": "484:8:7",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_SongInfo_$444_storage_ptr",
+                  "typeString": "struct SongBase.SongInfo"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 450,
+        "src": "27:485:7"
+      }
+    ],
+    "src": "0:513:7"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/parkdongjo/Documents/my_projects/ethereum_project/pla2ther/contracts/song/SongBase.sol",
+    "exportedSymbols": {
+      "SongBase": [
+        449
+      ]
+    },
+    "id": 450,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 431,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:7"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 449,
+        "linearizedBaseContracts": [
+          449
+        ],
+        "name": "SongBase",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "SongBase.SongInfo",
+            "id": 444,
+            "members": [
+              {
+                "constant": false,
+                "id": 433,
+                "name": "artist",
+                "nodeType": "VariableDeclaration",
+                "scope": 444,
+                "src": "138:13:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 432,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "138:6:7",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 435,
+                "name": "title",
+                "nodeType": "VariableDeclaration",
+                "scope": 444,
+                "src": "180:12:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 434,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "180:6:7",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 437,
+                "name": "fileURI",
+                "nodeType": "VariableDeclaration",
+                "scope": 444,
+                "src": "246:14:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 436,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "246:6:7",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 439,
+                "name": "creator",
+                "nodeType": "VariableDeclaration",
+                "scope": 444,
+                "src": "298:15:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 438,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "298:7:7",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 441,
+                "name": "time",
+                "nodeType": "VariableDeclaration",
+                "scope": 444,
+                "src": "348:11:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 440,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "348:6:7",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 443,
+                "name": "capacity",
+                "nodeType": "VariableDeclaration",
+                "scope": 444,
+                "src": "406:14:7",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint8",
+                  "typeString": "uint8"
+                },
+                "typeName": {
+                  "id": 442,
+                  "name": "uint8",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "406:5:7",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "SongInfo",
+            "nodeType": "StructDefinition",
+            "scope": 449,
+            "src": "83:344:7",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 448,
+            "name": "hashToSongInfo",
+            "nodeType": "VariableDeclaration",
+            "scope": 449,
+            "src": "464:44:7",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_SongInfo_$444_storage_$",
+              "typeString": "mapping(bytes32 => struct SongBase.SongInfo)"
+            },
+            "typeName": {
+              "id": 447,
+              "keyType": {
+                "id": 445,
+                "name": "bytes32",
+                "nodeType": "ElementaryTypeName",
+                "src": "473:7:7",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "464:29:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_SongInfo_$444_storage_$",
+                "typeString": "mapping(bytes32 => struct SongBase.SongInfo)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 446,
+                "name": "SongInfo",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 444,
+                "src": "484:8:7",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_SongInfo_$444_storage_ptr",
+                  "typeString": "struct SongBase.SongInfo"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 450,
+        "src": "27:485:7"
+      }
+    ],
+    "src": "0:513:7"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.0",
+  "updatedAt": "2018-07-01T07:52:53.078Z"
+}
