@@ -18,13 +18,15 @@ contract SongController is Ownable {
   )
   public
   {
-    address newSong
-    = address(new SongToken(
+    require(_capacity <= 100);
+
+    address newSong = address(new SongToken(
         "Pla2therToken",
         "P2T",
         _artist,
         _title,
         _fileURI,
+        msg.sender,
         _time,
         _capacity
       ));
